@@ -37,6 +37,7 @@ class PaintMap:
         square.paste(color_square_2, (0, 100), color_square_2) # down left
         square.paste(color_square_3, (100, 0), color_square_3) # up right
         square.paste(color_square_4, (100, 100), color_square_4) # down right
+        square = square.convert('RGB')
         square.save(f"static/map/{img_name}.jpeg")
 
 
